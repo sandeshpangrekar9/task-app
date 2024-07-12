@@ -1,0 +1,90 @@
+label {
+    font-weight: bold;
+}
+
+/* ---- Start of custom pagination ---- */
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #252b36;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: white;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #252b36 !important;
+    border: solid 1px #252b36 !important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #252b36 !important;
+    border: solid 1px #252b36;
+}
+
+/* ---- End of custom pagination ---- */
+
+/* ---- Start of custom vertical scroll model ---- */
+
+.modal-body-scrollable {
+    max-height: calc(100vh - 210px) !important;
+    overflow-y: auto !important;
+}
+
+/* ---- End of custom vertical scroll model ---- */
+
+.validation_message{
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+input[type="text"]:disabled{
+    background-color:#f2f2f2;
+}
+
+.table-h-scroll{
+    /*display: block !important;*/
+    max-width: -moz-fit-content !important;
+    max-width: fit-content !important;
+    margin: 0 auto !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.pagination > li > .page-link:focus,
+.pagination > li > .page-link:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: white !important;
+    background-color: #252b36;
+    border-color: #252b36;
+}
+
+.pagination > .active > .page-link
+{
+    color: white !important;
+    background-color: #252b36 !important;
+    border: solid 1px #252b36 !important;
+}
+
+.pagination > .active > .page-link:hover
+{
+    background-color: #252b36 !important;
+    border: solid 1px #252b36;
+}

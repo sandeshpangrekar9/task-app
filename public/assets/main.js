@@ -108,11 +108,5 @@ function getErrorResponseTextMessage(jqXHR) {
 }
 
 function showLimitedString(text, count, insertDots) {
-    return text.slice(0, count) + (((text.length > count) && insertDots) ? "<a href='javascript:void(0);' data-text='" + text + "' class='more-classs'> <span class='text-decoration-underline'>more..</span></a>" : "");
+    return text.slice(0, count) + (((text.length > count) && insertDots) ? "..." : "");
 }
-
-$(document).on("click",".more-classs",function() {
-    $("#more-modal-body").empty().html($(this).data('text'));
-    var moreModal = new bootstrap.Modal(document.getElementById('moreModal'))
-    moreModal.show();
-});

@@ -362,7 +362,25 @@
                     data: 'description',
                     name: 'description',
                     render: function (data, type, row) {
-                        return showLimitedString(data, 75, true);
+                        var html = `<div class="modal" id="moreModal_` + row.id + `">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">More..</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="more-modal-body">` + data + `</div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>`;
+                        html += `<a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#moreModal_` + row.id + `" class="text-decoration-underline">Read Description</a>`;
+                        return html;
+
                     }
                 },
                 { 

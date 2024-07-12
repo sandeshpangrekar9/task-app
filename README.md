@@ -1,5 +1,9 @@
 # Initial Setup
 
+## Technology Stack Used In This Project:-
+
+PHP 8.2.6, Laravel 10.0, MySQL 8.0.31, Node 20.14.0, Npm 10.7.0, Bootstrap 5.
+
 ## 1. Clone the repository
 Find a location on your computer where you want to store the project. A directory made for projects is generally a good choice.
 

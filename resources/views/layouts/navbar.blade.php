@@ -8,7 +8,7 @@
         </div>
 
         <div class="navbar-brand flex-1 flex-lg-0">
-            <a href="#" class="d-inline-flex align-items-center h5">
+            <a href="{{ url('/'); }}" class="d-inline-flex align-items-center h5">
                 <span class="d-none d-sm-inline-block h-16px text-white">Task App</span>
             </a>
         </div>

@@ -171,7 +171,7 @@
                 <div class="modal-content">
                     <form method="POST" action="#" name="form-edit-task" id="form-edit-task">
                         @csrf
-                        @method('PUT');
+                        @method('PUT')
                         <!-- Modal Header -->
                         <div class="modal-header">
                             <h4 class="modal-title">Edit Task</h4>
@@ -280,7 +280,7 @@
                 <div class="modal-content">
                     <form method="POST" action="#" name="form-delete-task" id="form-delete-task">
                         @csrf
-                        @method('DELETE');
+                        @method('DELETE')
 
                         <!-- Modal Header -->
                         <div class="modal-header">
